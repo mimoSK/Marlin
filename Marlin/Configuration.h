@@ -620,10 +620,10 @@
     #define DEFAULT_Kp_LIST {  15.94,  15.94 }
     #define DEFAULT_Ki_LIST {   1.17,   1.17 }
     #define DEFAULT_Kd_LIST {  54.19,  54.19 }
-  #else
-    #define DEFAULT_Kp  16.45
-    #define DEFAULT_Ki   1.06
-    #define DEFAULT_Kd  63.66
+  #else // calibrated with 210C temp.
+    #define DEFAULT_Kp  14.6
+    #define DEFAULT_Ki   0.86
+    #define DEFAULT_Kd  62.21
   #endif
 #endif // PIDTEMP
 
@@ -1569,8 +1569,8 @@
  * these options to restore the prior leveling state or to always enable
  * leveling immediately after G28.
  */
-//#define RESTORE_LEVELING_AFTER_G28
-//#define ENABLE_LEVELING_AFTER_G28
+// #define RESTORE_LEVELING_AFTER_G28
+#define ENABLE_LEVELING_AFTER_G28
 
 /**
  * Auto-leveling needs preheating
