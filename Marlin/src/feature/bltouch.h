@@ -59,13 +59,13 @@ typedef unsigned char BLTCommand;
   #define BLTOUCH_MODE_STORE_DELAY 150
 #endif
 #ifndef BLTOUCH_DEPLOY_DELAY
-  #define BLTOUCH_DEPLOY_DELAY   750
+  #define BLTOUCH_DEPLOY_DELAY   250
 #endif
 #ifndef BLTOUCH_STOW_DELAY
-  #define BLTOUCH_STOW_DELAY     750
+  #define BLTOUCH_STOW_DELAY     250
 #endif
 #ifndef BLTOUCH_RESET_DELAY
-  #define BLTOUCH_RESET_DELAY    500
+  #define BLTOUCH_RESET_DELAY    300
 #endif
 
 class BLTouch {
